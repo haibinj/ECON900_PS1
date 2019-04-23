@@ -3,7 +3,7 @@ this file use python to collect the information about board games from the "boar
 
 1. scraping
 The file named "game_request.py" is used to request html files from the website.
-To run the code, you need selenium and web driver. In this code, chromedrive is used. You need to change the address to the file you save your web driver in the "brower".
+To run the code, you need selenium and web driver. In this code, chromedrive is used. The chromedrive can be found in the folder named ?driver?. You need to change the address to the file you save your web driver in the code followed by ?brower".
 You also need to set the directory to save the html files in the "completName" part.
 To give some time for the javascript to be completely loaded, I set time waiting to 6 second. Longer waiting time can avoid incompleted files. 
 
@@ -15,8 +15,9 @@ The parsed data is saved in csv file.
 
 3. board game data
 The file named "boardgame_data.csv" is the data parsed from the parsing file.
-I cleaned the data by delete the va
+I cleaned the data by delete the variables that are not used in the machine learning part.
 
 4. Analysing the board game
 The file named "machine.py" is used to analyze the board game data.
-
+It looks at the relationship between the price of the game and the users?  rating  of the game. 
+It uses the GaussianMixture to separate the games in to three clusters. The graph ?Gaussian_cluster? shows the result.
