@@ -1,6 +1,8 @@
 # ECON900_PS1
 This file uses python to collect the information about board games from the "boardgamegeek.com" .
 
+System requirement: python3, BeautifulSoup, Pandas, selenium, Webdriver, sklearn. 
+
 1. scraping
 The file named "game_request.py" is used to request HTML files from the website.
 To run the code, you need selenium and web driver. In this code, "chrome driver" is used. The "chrome driver" can be found in the folder named "driver". You need to change the address to the file you save your web driver in the code followed by "brower".
@@ -33,3 +35,5 @@ components = 6, silhouette_score =  0.2884292281841645 ,   Gaussian_cluster_grap
 
 I also tried higher number of clusters, but the silhouette scores are lower.  It seem the games can be clustered into three or four groups.
 The price and the rating seems positively associated.
+
+You can change the number in the ?components? for different cases.
