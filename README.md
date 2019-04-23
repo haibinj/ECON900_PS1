@@ -25,6 +25,7 @@ The final data are in the ?csv? file named ?games_chop?.
 
 4. Analyzing the board game
 The file named "machine.py" is used to analyze the board game data.
+
 It looks at the relationship between the price of the game and the users rating of the game. 
 It uses the "GaussianMixture" to separate the games into three clusters. 
 components = 2, silhouette_score =  0.39952376133117234 , Gaussian_cluster_graph_2 shows the plotting result.
@@ -37,3 +38,13 @@ I also tried higher number of clusters, but the silhouette scores are lower.  It
 The price and the rating seems positively associated.
 
 You can change the number in the ?components? for different cases.
+
+If we take the cluster with component = 4. The game are separated into four groups. 
+The group with blue dots form a group that have relatively low price and relatively low rating.
+The group with yellow dots form a group that list relatively high price and receive relatively high rating.
+And the group with green dots form a group that receives very high rating but still charges a relatively low price. 
+The pattern of the group with purple dot is not quite clear.
+
+If the rating reflect the real customer satisfaction, and if the customer satisfaction is related to the effort of game design, then the yellow group has the good return for the game designers.  For it charge good price for their good quality. The green group can be under priced, for it generate high customer satisfaction but charges a low price.
+More information about the game will be needed to test the hypothesis.
+
